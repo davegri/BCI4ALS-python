@@ -20,7 +20,7 @@ models = [
         'model__C': Real(1e-6, 1e+1, 'log-uniform'),
         'model__gamma': Real(1e-6, 1e+1, 'log-uniform'),
         'model__degree': Integer(1, 12),
-        'model__kernel': ['linear', 'poly', 'rbf'], s
+        'model__kernel': ['linear', 'poly', 'rbf'],
     }},
     {"model": sklearn.ensemble.RandomForestClassifier, "search_space": {
         "model__max_features": Integer(1, 8),
@@ -107,7 +107,7 @@ def find_best_pipeline_for_subject(subject=None, pipeline=csp):
 def record_with_live_retraining(subject, pipeline=spectral, choose=False):
     epochs, labels = load_epochs_for_subject(subject, choose=choose)
     rec_params = load_rec_params()
-    run_session(rec_params, pipeline=pipeline, live_retraining=True, epochs=epochs, labels=labels)
+    run_session(rec_params, retrain_pipeline=pipeline, epochs=epochs, labels=labels)
     create_pipeline_for_subject(rec_params["subject"], pipeline=pipeline)
 
 
@@ -120,7 +120,4 @@ def load_epochs_for_subject(subject, choose=False):
 
 if __name__ == "__main__":
     # find_best_hyperparams_for_subject("David7", pipeline=spectral)
-    find_best_pipeline_for_subject("David7", spectral)
-    # epochs, labels = load_epochs_for_subject("David8")
-    # pred = pipeline.predict(epochs)
-    # print(sklearn.metrics.accuracy_score(labels, pred, normalize=True))
+    record_with_live_retraining("David7", csp)

@@ -1,0 +1,10 @@
+{
+  "csp__n_components": 5,
+  "model__max_depth": 10,
+  "model__max_features": 10,
+  "model__n_estimators": 10,
+  "preprocessing__do_laplacian": true,
+  "preprocessing__epoch_tmin": 1.026996306626797,
+  "preprocessing__h_freq": 15.0,
+  "preprocessing__l_freq": 11.21169512452566
+}

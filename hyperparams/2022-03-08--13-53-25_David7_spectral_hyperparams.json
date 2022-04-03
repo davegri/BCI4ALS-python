@@ -1,0 +1,5 @@
+{
+    "model__max_depth": 1,
+    "model__max_features": 9,
+    "model__n_estimators": 10
+}

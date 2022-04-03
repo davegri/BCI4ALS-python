@@ -1,0 +1,13 @@
+{
+    "csp__entropy": false,
+    "csp__log_mean_power": true,
+    "csp__n_components": 13,
+    "csp__total_power": true,
+    "csp__var": true,
+    "model__learning_rate": 0.4255209322252337,
+    "model__n_estimators": 6,
+    "preprocessing__do_laplacian": true,
+    "preprocessing__epoch_tmin": 1.4813860827388763,
+    "preprocessing__h_freq": 15.0,
+    "preprocessing__l_freq": 12.227134745503342
+}

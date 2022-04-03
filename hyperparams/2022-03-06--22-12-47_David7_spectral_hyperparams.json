@@ -1,0 +1,8 @@
+{
+    "feature_extraction__epoch_tmin": 2.0,
+    "model__learning_rate": 0.0005,
+    "model__max_depth": 6,
+    "model__max_features": 30,
+    "model__n_estimators": 1000,
+    "preprocessing__do_laplacian": false
+}

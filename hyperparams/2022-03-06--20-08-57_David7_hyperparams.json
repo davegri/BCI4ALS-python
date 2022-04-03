@@ -1,0 +1,8 @@
+{
+    "feature_extraction__epoch_tmin": 1.8668041059439124,
+    "model__C": 0.006267758611070239,
+    "model__degree": 2,
+    "model__gamma": 1.3798803186240898,
+    "model__kernel": "poly",
+    "preprocessing__do_laplacian": false
+}

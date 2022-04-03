@@ -1,0 +1,7 @@
+{
+    "csp__n_components": 9,
+    "preprocessing__do_laplacian": false,
+    "preprocessing__epoch_tmin": 1.2354443112226525,
+    "preprocessing__h_freq": 40.0,
+    "preprocessing__l_freq": 2.0
+}

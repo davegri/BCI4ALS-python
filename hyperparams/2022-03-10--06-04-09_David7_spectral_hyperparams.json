@@ -1,0 +1,5 @@
+{
+    "feature_extraction__epoch_tmin": 2.740489458799787,
+    "feature_extraction__n_overlap": 0.8,
+    "feature_extraction__n_per_seg": 231
+}

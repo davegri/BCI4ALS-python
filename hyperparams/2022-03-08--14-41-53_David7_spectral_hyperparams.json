@@ -1,0 +1,4 @@
+{
+    "model__leaf_size": 65,
+    "model__n_neighbors": 9
+}

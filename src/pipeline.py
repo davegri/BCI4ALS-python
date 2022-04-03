@@ -72,7 +72,7 @@ def get_epochs(raws, trial_duration, calibration_duration, markers=[Marker.IDLE,
         events = mne.find_events(raw)
 
         epochs = mne.Epochs(raw, events, markers, tmin=-calibration_duration, tmax=trial_duration, picks="data",
-                            on_missing=on_missing, baseline=None, reject=reject_criteria, flat=flat_criteria)
+                            on_missing=on_missing, baseline=None)
         epochs_list.append(epochs)
     epochs = mne.concatenate_epochs(epochs_list)
 

@@ -1,0 +1,6 @@
+{
+  "model__learning_rate": 0.032612149594678376,
+  "model__max_depth": 3,
+  "model__max_features": 6,
+  "model__n_estimators": 5
+}

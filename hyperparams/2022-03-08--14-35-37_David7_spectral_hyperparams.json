@@ -1,0 +1,5 @@
+{
+    "feature_selection__k": 3,
+    "model__leaf_size": 50,
+    "model__n_neighbors": 10
+}

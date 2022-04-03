@@ -2,6 +2,8 @@ import numpy as np
 from Marker import Marker
 from board import Board
 
+from psychopy import sound, visual
+
 from pipeline import get_epochs, evaluate_pipeline
 from data_utils import load_rec_params, save_raw, load_hyperparams
 import spectral
@@ -35,7 +37,7 @@ def run_session(params, retrain_pipeline=spectral, predict_pipeline=None, epochs
     loop_through_messages(win, [msg1])
 
     if retrain_pipeline:
-        hyperparams = load_hyperparams(params["subject"])
+        hyperparams = load_hyperparams(params["subject"], retrain_pipeline)
         predict_pipeline = retrain_pipeline.create_pipeline(hyperparams)
         predict_pipeline.fit(epochs, labels)
         best_score = evaluate_pipeline(predict_pipeline, epochs, labels)
